@@ -1,0 +1,35 @@
+image:
+  repository: ghcr.io/miletocarmelo/dagster_successtest
+  tag: latest
+  pullPolicy: Always
+
+replicaCount: 1
+
+grpc:
+  port: 4000
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 256Mi
+  limits:
+    cpu: 500m
+    memory: 512Mi
+
+serviceAccount:
+  create: true
+  name: ""
+
+podSecurityContext: {}
+
+securityContext: {}
+
+service:
+  type: ClusterIP
+  port: 4000
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
