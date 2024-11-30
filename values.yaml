@@ -18,8 +18,8 @@ resources:
 
 serviceAccount:
   create: true
-  name: ""
-
+  name: dagster-pipeline-successtest
+  
 podSecurityContext: {}
 
 securityContext: {}
