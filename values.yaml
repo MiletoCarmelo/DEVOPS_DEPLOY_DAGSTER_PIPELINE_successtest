@@ -1,7 +1,7 @@
 image:
-  repository: docker pull ghcr.io/miletocarmelo/dagster_successtest/pipeline-x
+  repository: ghcr.io/miletocarmelo/dagster_successtest/pipeline-x
   tag: latest
-  pullPolicy: Always
+  pullPolicy: Always  # Ajout recommandé pour les images :latest
 
 replicaCount: 1
 
