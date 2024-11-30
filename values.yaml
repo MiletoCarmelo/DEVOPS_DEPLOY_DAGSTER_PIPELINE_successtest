@@ -1,5 +1,5 @@
 image:
-  repository: ghcr.io/miletocarmelo/dagster_successtest
+  repository: docker pull ghcr.io/miletocarmelo/dagster_successtest/pipeline-x
   tag: latest
   pullPolicy: Always
 
@@ -19,7 +19,7 @@ resources:
 serviceAccount:
   create: true
   name: dagster-pipeline-successtest
-  
+
 podSecurityContext: {}
 
 securityContext: {}
