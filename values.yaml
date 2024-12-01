@@ -3,6 +3,9 @@ image:
   tag: latest
   pullPolicy: Always  # Ajout recommandé pour les images :latest
 
+environment: dev
+module: pipeline-successtest
+
 replicaCount: 1
 
 grpc:
